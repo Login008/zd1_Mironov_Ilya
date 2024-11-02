@@ -1,0 +1,14 @@
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_1\bin\Debug\УП_1.exe.config
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_1\bin\Debug\УП_1.exe
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_1\bin\Debug\УП_1.pdb
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_1\obj\Debug\УП_1.csproj.AssemblyReference.cache
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_1\obj\Debug\УП_1.csproj.CoreCompileInputs.cache
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_1\obj\Debug\УП_1.exe
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_1\obj\Debug\УП_1.pdb
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_1\bin\Debug\УП_1.exe.config
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_1\bin\Debug\УП_1.exe
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_1\bin\Debug\УП_1.pdb
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_1\obj\Debug\УП_1.csproj.AssemblyReference.cache
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_1\obj\Debug\УП_1.csproj.CoreCompileInputs.cache
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_1\obj\Debug\УП_1.exe
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_1\obj\Debug\УП_1.pdb
