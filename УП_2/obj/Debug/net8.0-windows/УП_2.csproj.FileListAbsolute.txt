@@ -16,3 +16,4 @@ C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_2\obj\Debug\net8
 C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_2\obj\Debug\net8.0-windows\УП_2.pdb
 C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_2\obj\Debug\net8.0-windows\УП_2.genruntimeconfig.cache
 C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_2\obj\Debug\net8.0-windows\ref\УП_2.dll
+C:\Users\st310-07\Documents\Миронов ПР-31\УП_01\УП_2\obj\Debug\net8.0-windows\УП_2.sourcelink.json

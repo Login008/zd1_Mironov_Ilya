@@ -11,12 +11,12 @@ namespace УП_2
         private Dictionary<Product, int> products;
         public double salary = 0;
 
-        public Shop()
+        public Shop() //конструктор
         {
             products = new Dictionary<Product, int>();
         }
 
-        public void CreateProduct(string name, double price, int count)
+        public void CreateProduct(string name, double price, int count) //Добавление продукта в словарь
         {
             for (int i = 0; i < products.Count; i++)
             {
@@ -30,7 +30,7 @@ namespace УП_2
             products.Add(new Product(name, price), count);
         }
 
-        public ListBox WriteAllProducts(ListBox list1)
+        public ListBox WriteAllProducts(ListBox list1) //вывод всех продуктов в листбокс
         {
             foreach (var product in products)
             {
@@ -39,7 +39,7 @@ namespace УП_2
             return list1;
         }
 
-        public void Sell(Product product)
+        public void Sell(Product product) //уменьшение количества продуктов 
         {
             if (products.ContainsKey(product))
             {
@@ -58,7 +58,7 @@ namespace УП_2
                 MessageBox.Show($"Товар {product.Name} не найден!");
             }
         }
-        public void Sell(string ProductName)
+        public void Sell(string ProductName) //продажа продукта
         {
             Product ToSell = FindByName(ProductName);
             if (ToSell != null)
@@ -71,7 +71,7 @@ namespace УП_2
             }
         }
 
-        public Product FindByName(string name)
+        public Product FindByName(string name) //поиск продукта в словаре по названию
         {
             foreach (var product in products.Keys)
             {

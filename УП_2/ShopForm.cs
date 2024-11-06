@@ -20,27 +20,27 @@ namespace УП_2
 
         private void ShopForm_Load(object sender, EventArgs e)
         {
-            pyaterocka = new Shop();
+            pyaterocka = new Shop(); //инициализация магазина
             label4.Text = pyaterocka.salary.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void addBut_Click(object sender, EventArgs e)
         {
-            try
+            try //проверка на введение чисел
             {
-                if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
+                if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "") //проверка на пустоту
                 {
-                    if (double.Parse(textBox2.Text) > 0)
+                    if (double.Parse(textBox2.Text) > 0) //проверка на количество
                     {
-                        if (int.Parse(textBox3.Text) > 0)
+                        if (int.Parse(textBox3.Text) > 0) //ещё одна проверка на количество
                         {
-                            pyaterocka.CreateProduct(textBox1.Text, double.Parse(textBox2.Text), int.Parse(textBox3.Text));
+                            pyaterocka.CreateProduct(textBox1.Text, double.Parse(textBox2.Text), int.Parse(textBox3.Text)); //добавляем продукт
                             MessageBox.Show("Товар был успешно добавлен");
-                            textBox1.Text = "";
+                            textBox1.Text = ""; //очищаем текстбоксы
                             textBox2.Text = "";
                             textBox3.Text = "";
-                            listBox1.Items.Clear();
-                            listBox1 = pyaterocka.WriteAllProducts(listBox1);
+                            listBox1.Items.Clear(); //очищаем листбокс
+                            listBox1 = pyaterocka.WriteAllProducts(listBox1); //выводим все продукты в листбокс
                         }
                         else
                             MessageBox.Show("Количество товара не может быть отрицательным или равно нулю");
@@ -57,13 +57,13 @@ namespace УП_2
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void addInBasket_Click(object sender, EventArgs e)
         {
-            try
+            try //проверка на выбор товара
             {
-                string[] name = listBox1.Items[listBox1.SelectedIndex].ToString().Split('~');
-                Product product = pyaterocka.FindByName(name[0]);
-                listBox2.Items.Add($"{product.Name}~{product.Price}");
+                string[] name = listBox1.Items[listBox1.SelectedIndex].ToString().Split('~'); //берём товар из 1-го листбокса
+                Product product = pyaterocka.FindByName(name[0]); //ищем его в словаре
+                listBox2.Items.Add($"{product.Name}~{product.Price}"); //добавляем во 2-ой листбокс
             }
             catch
             {
@@ -71,23 +71,23 @@ namespace УП_2
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void sellBut_Click(object sender, EventArgs e)
         {
-            foreach (var tovar in listBox2.Items)
+            foreach (var tovar in listBox2.Items) //перебираем элементы во 2-ом листбоксе и продаём всё из корзины
             {
                 string[] name = tovar.ToString().Split('~');
                 pyaterocka.Sell(name[0]);
-                label4.Text = pyaterocka.salary.ToString();
             }
-            listBox2.Items.Clear();
-            listBox1.Items.Clear();
-            listBox1 = pyaterocka.WriteAllProducts(listBox1);
+            label4.Text = pyaterocka.salary.ToString(); //обновляем прибыль
+            listBox2.Items.Clear(); //очищаем корзину
+            listBox1.Items.Clear(); //очищаем 1-ый листбокс
+            listBox1 = pyaterocka.WriteAllProducts(listBox1); //обновляем товары в наличии
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void deleteBut_Click(object sender, EventArgs e)
         {
-            if (listBox2.SelectedIndex != -1)
-                listBox2.Items.RemoveAt(listBox2.SelectedIndex);
+            if (listBox2.SelectedIndex != -1) //проверка на выбранный товар
+                listBox2.Items.RemoveAt(listBox2.SelectedIndex); //удаляем элемент из корзины
             else
                 MessageBox.Show("Товар не выбран");
         }

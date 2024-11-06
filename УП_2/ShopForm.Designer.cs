@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            button1 = new Button();
+            addBut = new Button();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
@@ -37,17 +37,17 @@
             label1 = new Label();
             label2 = new Label();
             listBox2 = new ListBox();
-            button2 = new Button();
-            button3 = new Button();
+            addInBasket = new Button();
+            sellBut = new Button();
             label3 = new Label();
             label4 = new Label();
-            button4 = new Button();
+            deleteBut = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(addBut);
             groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(textBox1);
@@ -58,15 +58,15 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Добавление товара";
             // 
-            // button1
+            // addBut
             // 
-            button1.Location = new Point(137, 58);
-            button1.Name = "button1";
-            button1.Size = new Size(125, 29);
-            button1.TabIndex = 3;
-            button1.Text = "Добавить";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            addBut.Location = new Point(137, 58);
+            addBut.Name = "addBut";
+            addBut.Size = new Size(125, 29);
+            addBut.TabIndex = 3;
+            addBut.Text = "Добавить";
+            addBut.UseVisualStyleBackColor = true;
+            addBut.Click += addBut_Click;
             // 
             // textBox3
             // 
@@ -128,25 +128,25 @@
             listBox2.Size = new Size(270, 264);
             listBox2.TabIndex = 3;
             // 
-            // button2
+            // addInBasket
             // 
-            button2.Location = new Point(12, 389);
-            button2.Name = "button2";
-            button2.Size = new Size(270, 49);
-            button2.TabIndex = 5;
-            button2.Text = "Добавить выбранный товар в корзину";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            addInBasket.Location = new Point(12, 389);
+            addInBasket.Name = "addInBasket";
+            addInBasket.Size = new Size(270, 49);
+            addInBasket.TabIndex = 5;
+            addInBasket.Text = "Добавить выбранный товар в корзину";
+            addInBasket.UseVisualStyleBackColor = true;
+            addInBasket.Click += addInBasket_Click;
             // 
-            // button3
+            // sellBut
             // 
-            button3.Location = new Point(518, 392);
-            button3.Name = "button3";
-            button3.Size = new Size(97, 49);
-            button3.TabIndex = 6;
-            button3.Text = "Продать";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            sellBut.Location = new Point(518, 392);
+            sellBut.Name = "sellBut";
+            sellBut.Size = new Size(97, 49);
+            sellBut.TabIndex = 6;
+            sellBut.Text = "Продать";
+            sellBut.UseVisualStyleBackColor = true;
+            sellBut.Click += sellBut_Click;
             // 
             // label3
             // 
@@ -165,26 +165,26 @@
             label4.Size = new Size(0, 20);
             label4.TabIndex = 8;
             // 
-            // button4
+            // deleteBut
             // 
-            button4.Location = new Point(621, 392);
-            button4.Name = "button4";
-            button4.Size = new Size(167, 49);
-            button4.TabIndex = 9;
-            button4.Text = "Удалить выбранный товар";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            deleteBut.Location = new Point(621, 392);
+            deleteBut.Name = "deleteBut";
+            deleteBut.Size = new Size(167, 49);
+            deleteBut.TabIndex = 9;
+            deleteBut.Text = "Удалить выбранный товар";
+            deleteBut.UseVisualStyleBackColor = true;
+            deleteBut.Click += deleteBut_Click;
             // 
             // ShopForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button4);
+            Controls.Add(deleteBut);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(sellBut);
+            Controls.Add(addInBasket);
             Controls.Add(label2);
             Controls.Add(listBox2);
             Controls.Add(label1);
@@ -202,7 +202,7 @@
         #endregion
 
         private GroupBox groupBox1;
-        private Button button1;
+        private Button addBut;
         private TextBox textBox3;
         private TextBox textBox2;
         private TextBox textBox1;
@@ -210,10 +210,10 @@
         private Label label1;
         private Label label2;
         private ListBox listBox2;
-        private Button button2;
-        private Button button3;
+        private Button addInBasket;
+        private Button sellBut;
         private Label label3;
         private Label label4;
-        private Button button4;
+        private Button deleteBut;
     }
 }

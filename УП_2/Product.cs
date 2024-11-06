@@ -8,16 +8,16 @@ namespace УП_2
 {
     class Product
     {
-        public double Price { get; set; }
+        public double Price { get; set; } //свойства продукта
         public string Name { get; set; }
 
-        public Product(string Name, double Price)
+        public Product(string Name, double Price) //конструктор
         {
             this.Name = Name;
             this.Price = Price;
         }
 
-        public string GetInfo()
+        public string GetInfo() //отображение информации
         {
             return Name + "~" + Price;
         }
