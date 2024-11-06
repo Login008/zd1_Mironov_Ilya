@@ -45,6 +45,7 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
+            listBox1.HorizontalScrollbar = true;
             listBox1.Location = new Point(12, 12);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(394, 224);

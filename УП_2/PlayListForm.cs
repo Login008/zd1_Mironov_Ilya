@@ -25,7 +25,7 @@ namespace УП_2
             listBox1.Items.Clear(); //очищаем список
             foreach (var item in playlist.List) //перебираем аудио в списке и добавляем в листбокс
             {
-                listBox1.Items.Add($"{item.Author}~{item.Title}~{item.Filename}");
+                listBox1.Items.Add($"{item.Author}\t{item.Title}\t{item.Filename}");
             }
         }
 
